@@ -1,3 +1,5 @@
+# this code is for the Programming Question - 2 
+
 import random
 
 comparisons = 0
