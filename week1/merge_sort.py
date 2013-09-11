@@ -21,6 +21,6 @@ def merge_sort(alist):
 
 		return merge.merge(leftSorted, rightSorted)
 
-if __name__ == '__main__':
-	print(merge_sort([1, 3 ,2, 7, 4, 56]))
+# if __name__ == '__main__':
+# 	print(merge_sort([1, 3 ,2, 7, 4, 56]))
 

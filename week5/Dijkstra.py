@@ -64,8 +64,8 @@ def dijkstra(graph, source):
 	while len(queue) > 0:
 		d, u = heapq.heappop(queue)
 		
-		if u in visited:
-			continue
+		# if u in visited:
+		# 	continue
 
 		for data in graph[u]:
 			v = data[1]
@@ -81,13 +81,13 @@ def dijkstra(graph, source):
 				queue.append((distance[v], v))
 			
 		heapq.heapify(queue)
-		visited.append(u)
+		# visited.append(u)
 
 	return distance
 
 
 def main():
-	graph = buildAdjList('test.txt')
+	graph = buildAdjList('dijkstra.txt')
 	# print graph
 
 	distance = dijkstra(graph, 0)
